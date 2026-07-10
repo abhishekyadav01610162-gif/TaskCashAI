@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login - TaskCash AI</title>
+
+<style>
+body{
+font-family:Arial;
+background:#0f172a;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.box{
+background:white;
+padding:20px;
+border-radius:15px;
+width:300px;
+text-align:center;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+width:95%;
+padding:10px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>TaskCash AI Login</h2>
+
+<input type="text" id="user" placeholder="Username">
+
+<input type="password" id="pass" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+<script>
+function login(){
+
+let u=document.getElementById("user").value;
+let p=document.getElementById("pass").value;
+
+if(u=="admin" && p=="1234"){
+alert("Login Successful");
+window.location.href="index.html";
+}else{
+alert("Wrong Username or Password");
+}
+
+}
+</script>
+
+</body>
+</html>
